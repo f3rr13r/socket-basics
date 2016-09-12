@@ -9,7 +9,7 @@ console.log(name + ' wants to join ' + room);
 
 var $chatRoom = jQuery('.chat-room');
 
-$chatRoom.append('<h1><strong>' + room + '</strong</h1>');
+$chatRoom.append('<h1 class="text-center"><strong>' + room + '</strong</h1>');
 
 
 socket.on('connect', function () {
