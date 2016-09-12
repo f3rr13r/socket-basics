@@ -1,0 +1,11 @@
+{
+  "name": "sockets-intro",
+  "version": "1.0.0",
+  "description": "an introduction to the sockets.io framework",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Harry Ferrier",
+  "license": "ISC"
+}
