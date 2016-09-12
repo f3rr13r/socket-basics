@@ -7,10 +7,21 @@ var socket = io();
 console.log(name + ' wants to join ' + room);
 
 
+var $chatRoom = jQuery('.chat-room');
+
+$chatRoom.append('<h1><strong>' + room + '</strong</h1>');
+
 
 socket.on('connect', function () {
 
 	console.log('User connected to socket.io server');
+
+	socket.emit('joinRoom', {
+
+		name: name,
+		room: room
+
+	});
 
 });
 
